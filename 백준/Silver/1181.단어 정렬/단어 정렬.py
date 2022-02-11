@@ -1,15 +1,13 @@
-import sys as sys
+import sys
+N = sys.stdin.readline().rstrip()
 
-n = int(input())
-arr = [[] for _ in range(51)]
-for _ in range(n):
-    temp = sys.stdin.readline().rstrip()
-    arr[len(temp)].append(temp)
-for i in range(1, len(arr)):
-    arr[i].sort()
-    back = ""
-    for j in arr[i]:
-        if back == j:
-            continue
-        print(j)
-        back = j
+lst = []
+for i in range(int(N)) :
+    lst.append(sys.stdin.readline().rstrip())
+
+lst = list(set(lst))   
+lst.sort()
+lst.sort(key=len)
+
+for i in lst :
+  print(i)

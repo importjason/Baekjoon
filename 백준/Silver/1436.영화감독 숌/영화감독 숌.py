@@ -1,11 +1,10 @@
-n=int(input())
-i=666
-num=1
-while True:
-    if '666' in str(i):
-        if num==n:
-            print(i)
-            break
-        else:
-            num+=1
-    i+=1
+N = int(input())
+num = 1
+lst = []
+
+while len(lst) != N :
+  if str(num).count('666') > 0 :
+    lst.append(num)
+  num += 1
+
+print(lst[-1])

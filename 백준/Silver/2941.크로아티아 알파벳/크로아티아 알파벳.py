@@ -1,6 +1,11 @@
-croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
-word = input()
+w = input()
+ans = 0
+lst = ['dz=','c=', 'c-', 'd-', 'lj', 'nj', 's=', 'z=']
+for i in lst :
+  n = w.count(i)
+  w = w.replace(i,' ')
+  ans += n
 
-for i in croatia :
-    word = word.replace(i, '*')  # input 변수와 동일한 이름의 변수
-print(len(word))
+ans += len(w.replace(' ',''))
+
+print(ans)
