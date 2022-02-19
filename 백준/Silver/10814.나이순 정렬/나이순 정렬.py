@@ -1,0 +1,13 @@
+import sys
+
+n = int(input())
+lst = []
+
+for i in range(n) :
+  a,b = sys.stdin.readline().split()
+  lst.append([int(a),b,i])
+
+lst.sort(key = lambda x : (x[0],x[2]))
+
+for i in range(n) :
+  print(lst[i][0],lst[i][1])
