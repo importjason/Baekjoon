@@ -1,4 +1,4 @@
-# [Silver V] 체스판 다시 칠하기 - 1018 
+# B.blobyum
 
 [문제 링크](https://www.acmicpc.net/contest/problem/756/2)
 
