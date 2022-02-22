@@ -6,7 +6,7 @@ lst = list(map(int, input().split()))
 
 beg, end = 0, k - 1
 thesum = sum(lst[beg:end+1])
-maxsum = thesum
+sumlst = [thesum]
 
 for i in range(n - 1):
   beg += 1
@@ -15,6 +15,6 @@ for i in range(n - 1):
   else :
     end = (end + 1) % n
   thesum = thesum - lst[beg-1] + lst[end]
-  maxsum = max(maxsum, thesum)
+  sumlst.append(thesum)
 
-print(maxsum)
+print(max(sumlst))
