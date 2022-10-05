@@ -1,5 +1,3 @@
-from sys import stdin
-
 price_given = int(input())
 
 casenum = int(input())
